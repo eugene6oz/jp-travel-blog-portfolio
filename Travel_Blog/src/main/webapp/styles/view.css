@@ -1,0 +1,308 @@
+@charset "UTF-8";
+
+/* =========================
+   전체 래퍼
+========================= */
+.view-wrap{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 12px;
+}
+
+/* =========================
+   모바일 상단바
+========================= */
+.view-topbar{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 6px;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+.view-topbar-title{
+  font-weight: 700;
+}
+.icon-btn{
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   카드 (❗핵심)
+========================= */
+.view-card{
+  display: flex;
+  height: 720px;              /* 카드 높이 고정 */
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* =========================
+   왼쪽 이미지 영역
+========================= */
+.view-media{
+  flex: 0 0 52%;
+  background: #000;
+  overflow: hidden;
+}
+
+.view-media-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* 댓글 늘어나도 확대 ❌ */
+  display: block;
+}
+
+/* =========================
+   오른쪽 영역
+========================= */
+.view-side{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* =========================
+   헤더(작성자)
+========================= */
+.view-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  border-bottom: 1px solid #efefef;
+}
+
+.author{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.author-avatar{
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-meta{
+  min-width: 0;
+}
+
+.author-line{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.author-name{
+  font-weight: 700;
+}
+
+.author-sub{
+  font-size: 12px;
+  color: #777;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.dot{
+  color: #bbb;
+}
+
+/* 수정/삭제 */
+.view-actions{
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.text-btn{
+  font-size: 13px;
+  color: #222;
+  text-decoration: none;
+}
+.text-btn:hover{
+  text-decoration: underline;
+}
+.text-btn.danger{
+  color: #d93025;
+}
+
+/* =========================
+   본문 + 댓글 영역
+========================= */
+.view-body{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 14px;              /* ✅ 여백 복구 */
+}
+
+/* 본문 */
+.post-caption{
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.caption-text{
+  margin-left: 6px;
+  color: #222;
+}
+
+/* =========================
+   댓글
+========================= */
+.comment-list{
+  flex: 1;
+  overflow-y: auto;
+  min-height: 120px;
+}
+
+.comment-item{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.comment-line{
+  line-height: 1.4;
+}
+
+.comment-user{
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.comment-text{
+  color: #222;
+  word-break: break-word;
+}
+
+.comment-sub{
+  font-size: 12px;
+  color: #888;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.link-btn{
+  border: none;
+  background: transparent;
+  color: #e04646;
+  font-size: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+.link-btn:hover{
+  text-decoration: underline;
+}
+
+/* =========================
+   하단
+========================= */
+.view-footer{
+  border-top: 1px solid #efefef;
+  padding: 12px 14px;
+}
+
+.post-actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.left-actions{
+  display: flex;
+  gap: 10px;
+}
+
+.icon-action{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.post-stats{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* =========================
+   댓글 입력
+========================= */
+.comment-form{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 10px;
+}
+
+.comment-input{
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.comment-submit{
+  border: none;
+  background: transparent;
+  color: #3897f0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.comment-submit:disabled{
+  opacity: 0.4;
+  cursor: default;
+}
+
+.map-box{ width:100%; height:520px; }
+#mapBox{ width:100%; height:520px; }
+
+.modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 18px;
+}
+.modal-overlay.is-open{ display:flex; }
+
+.modal-card{
+  width: min(920px, 100%);
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.map-box{ width:100%; height:520px; }
+
