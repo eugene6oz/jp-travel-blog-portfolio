@@ -1,31 +1,33 @@
 # jp-travel-blog-portfolio
-JSL 26기 교육생 | JAVA, DATABASE
+JSL第26期 教育生｜Java・Database・SQL
 
 # JPTRIPGRAM
 
-## 프로젝트 소개
-일본 여행 경험을 기록·공유하는 SNS형 여행 블로그 웹 서비스
+## プロジェクト概要
+日本旅行の体験を記録・共有する  
+SNS型旅行ブログWebサービス
 
-## 기술 스택
+## 技術スタック
 - Java 17
 - JSP / Servlet / JDBC
-- Oracle DB
+- Oracle Database
 - Tomcat 9
 - HTML / CSS / JavaScript
 
-## 주요 기능
-- 회원가입 / 로그인 / 로그아웃
-- 게시글 CRUD
-- 댓글 / 좋아요
-- 마이페이지
+## 主な機能
+- 会員登録 / ログイン / ログアウト
+- 投稿のCRUD機能
+- コメント / いいね
+- マイページ
 
-## 아키텍처
-- MVC 패턴 (Controller / Service / DAO / View)
+## アーキテクチャ
+- MVCパターン（Controller / Service / DAO / View）
 
-## 실행 방법
-1. Tomcat 9 설치
-2. Oracle DB 세팅
-3. SQL 실행
-4. Eclipse에서 Import → Run
+## 実行方法
+1. Tomcat 9 をインストール
+2. Oracle Database をセットアップ
+3. SQL を実行
+4. Eclipse で Import → 実行
+
 
 
